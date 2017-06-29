@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raytine.opencvdemo.MainActivity">
+
+        <TextView
+            android:id="@+id/sample_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintVertical_bias="0.303"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <ImageView
+            android:id="@+id/show_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/background_dark"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            android:layout_marginStart="33dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/sample_text"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="33dp" />
+
+        <Button
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恢复"
+            tools:layout_constraintRight_creator="1"
+            android:layout_marginEnd="58dp"
+            app:layout_constraintRight_toRightOf="@+id/sample_text"
+            app:layout_constraintBaseline_toBaselineOf="@+id/gray_pic"
+            tools:layout_constraintBaseline_creator="1"
+            android:layout_marginRight="58dp" />
+
+        <Button
+            android:id="@+id/gray_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变灰"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/sample_text"
+            android:layout_marginStart="60dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintLeft_toLeftOf="@+id/sample_text"
+            android:layout_marginLeft="60dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>
